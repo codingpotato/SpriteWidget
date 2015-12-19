@@ -6,13 +6,17 @@
 //  Copyright (c) 2015 codingpotato. All rights reserved.
 //
 
-import UIKit
+import SpriteKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let skView = self.view as! SKView
+        skView.ignoresSiblingOrder = true
+        let scene = Scene(size: view.bounds.size)
+        scene.scaleMode = .AspectFill
+        skView.presentScene(scene)
     }
 
     override func didReceiveMemoryWarning() {

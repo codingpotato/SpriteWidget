@@ -1,0 +1,14 @@
+PODS:
+  - SpriteWidget (0.1.0)
+
+DEPENDENCIES:
+  - SpriteWidget (from `../`)
+
+EXTERNAL SOURCES:
+  SpriteWidget:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SpriteWidget: f8de34a94eb46b173a1a1501181252f47333010a
+
+COCOAPODS: 0.39.0

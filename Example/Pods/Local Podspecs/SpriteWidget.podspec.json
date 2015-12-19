@@ -1,0 +1,25 @@
+{
+  "name": "SpriteWidget",
+  "version": "0.1.0",
+  "summary": "A short description of SpriteWidget.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SpriteWidget",
+  "license": "MIT",
+  "authors": {
+    "codingpotato": "codingpotato@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SpriteWidget.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "SpriteWidget": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

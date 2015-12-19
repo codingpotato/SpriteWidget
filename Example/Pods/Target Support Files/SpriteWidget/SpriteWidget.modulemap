@@ -1,0 +1,6 @@
+framework module SpriteWidget {
+  umbrella header "SpriteWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}
