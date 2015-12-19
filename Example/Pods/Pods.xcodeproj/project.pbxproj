@@ -17,8 +17,12 @@
 		AF81F228D1282DFFF4403980E19F52A2 /* SpriteWidget.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FAFD4C68388B1A3CD5F7CD5BAF929087 /* SpriteWidget.bundle */; };
 		C5BA7EB549EE2416E8CB07D751B9012F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		E9CE928A8F50B2EFAB9CD8EF781CC352 /* SpriteWidget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC3567EE80E08685A0AFD3AB1D14FC8 /* SpriteWidget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCB9D9AA1C24EEBE00854F2A /* SpriteWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9A91C24EEBE00854F2A /* SpriteWidget.swift */; };
+		FCB9D9AA1C24EEBE00854F2A /* SWContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9A91C24EEBE00854F2A /* SWContainer.swift */; };
 		FCB9D9AE1C24F1C900854F2A /* HorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9AD1C24F1C900854F2A /* HorizontalLayout.swift */; };
+		FCB9D9B21C25324A00854F2A /* SWLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9B11C25324A00854F2A /* SWLabel.swift */; };
+		FCB9D9B61C25415300854F2A /* SWNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9B51C25415300854F2A /* SWNode.swift */; };
+		FCB9D9B81C25475D00854F2A /* SWAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9B71C25475D00854F2A /* SWAlert.swift */; };
+		FCB9D9BA1C254AB900854F2A /* SWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9B91C254AB900854F2A /* SWButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +80,12 @@
 		F506D04C8B689383763FB7F68090B20F /* Pods-SpriteWidget_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpriteWidget_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FAF9B5F12E60921E15A054FDDE88E70A /* Pods-SpriteWidget_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteWidget_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FAFD4C68388B1A3CD5F7CD5BAF929087 /* SpriteWidget.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteWidget.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCB9D9A91C24EEBE00854F2A /* SpriteWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteWidget.swift; sourceTree = "<group>"; };
+		FCB9D9A91C24EEBE00854F2A /* SWContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWContainer.swift; sourceTree = "<group>"; };
 		FCB9D9AD1C24F1C900854F2A /* HorizontalLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalLayout.swift; sourceTree = "<group>"; };
+		FCB9D9B11C25324A00854F2A /* SWLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWLabel.swift; sourceTree = "<group>"; };
+		FCB9D9B51C25415300854F2A /* SWNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWNode.swift; sourceTree = "<group>"; };
+		FCB9D9B71C25475D00854F2A /* SWAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWAlert.swift; sourceTree = "<group>"; };
+		FCB9D9B91C254AB900854F2A /* SWButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWButton.swift; sourceTree = "<group>"; };
 		FD3D3BF3E7D0CDAF338E649759190811 /* SpriteWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SpriteWidget.modulemap; sourceTree = "<group>"; };
 		FFDA1FBCA675729D76CB4E44F232841D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,8 +215,12 @@
 		CE46E191F787335CB229BB8D0DDC6AB1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FCB9D9A91C24EEBE00854F2A /* SpriteWidget.swift */,
 				FCB9D9AD1C24F1C900854F2A /* HorizontalLayout.swift */,
+				FCB9D9B71C25475D00854F2A /* SWAlert.swift */,
+				FCB9D9B91C254AB900854F2A /* SWButton.swift */,
+				FCB9D9A91C24EEBE00854F2A /* SWContainer.swift */,
+				FCB9D9B11C25324A00854F2A /* SWLabel.swift */,
+				FCB9D9B51C25415300854F2A /* SWNode.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -411,9 +423,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB9D9AA1C24EEBE00854F2A /* SpriteWidget.swift in Sources */,
+				FCB9D9AA1C24EEBE00854F2A /* SWContainer.swift in Sources */,
+				FCB9D9BA1C254AB900854F2A /* SWButton.swift in Sources */,
 				FCB9D9AE1C24F1C900854F2A /* HorizontalLayout.swift in Sources */,
+				FCB9D9B81C25475D00854F2A /* SWAlert.swift in Sources */,
+				FCB9D9B61C25415300854F2A /* SWNode.swift in Sources */,
 				A5E0311C28238B402A52483D41B3233E /* SpriteWidget-dummy.m in Sources */,
+				FCB9D9B21C25324A00854F2A /* SWLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

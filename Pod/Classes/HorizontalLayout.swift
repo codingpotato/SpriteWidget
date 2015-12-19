@@ -6,6 +6,8 @@
 //
 //
 
+import SpriteKit
+
 public struct Insets {
     
     let left: CGFloat
@@ -39,19 +41,18 @@ public struct HorizontalLayout {
         self.spacings = spacings.count > 0 ? spacings : [0]
     }
     
-    func layoutWidgets(widgets: [SpriteWidget], parent: SpriteWidget) {
+    func layoutNodes(nodes: [SKNode], parent: SWContainer) {
         var totalSpacing: CGFloat = 0
-        for index in 0..<widgets.count - 1 {
+        for index in 0..<nodes.count - 1 {
             totalSpacing += spacings[index % spacings.count]
         }
-        let width = parent.size.width * (1 - insets.left - insets.right - totalSpacing)
+        let width = parent.size.width * (1 - insets.left - insets.right - totalSpacing) / CGFloat(nodes.count)
         let height = parent.size.height * (1 - insets.top - insets.bottom)
         var x = (insets.left - parent.anchorPoint.x) * parent.size.width
         let y = (insets.bottom - parent.anchorPoint.y) * parent.size.height
-        for index in 0..<widgets.count {
-            let widget = widgets[index]
-            widget.position = CGPoint(x: x + widget.anchorPoint.x * width, y: y + widget.anchorPoint.y * height)
-            widget.size = CGSize(width: width, height: height)
+        for index in 0..<nodes.count {
+            let node = nodes[index]
+            node.layoutInRect(CGRect(x: x, y: y, width: width, height: height))
             x += width + parent.size.width * spacings[index % spacings.count]
         }
     }

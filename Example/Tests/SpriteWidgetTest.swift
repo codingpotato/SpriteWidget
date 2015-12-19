@@ -12,7 +12,7 @@ import XCTest
 
 class SpriteWidgetTest: XCTestCase {
     
-    let CGFLOAT_ACCURACY: CGFloat = 0.000001
+    let CGFLOAT_ACCURACY: CGFloat = 0.0001
 
     override func setUp() {
         super.setUp()
@@ -25,11 +25,11 @@ class SpriteWidgetTest: XCTestCase {
     func testExample() {
         let parentWidth: CGFloat = 800
         let parentHeight: CGFloat = 600
-        let parent = SpriteWidget(color: SKColor.grayColor(), size: CGSize(width: parentWidth, height: parentHeight))
+        let parent = SWContainer(color: SKColor.grayColor(), size: CGSize(width: parentWidth, height: parentHeight))
         let widgets = [
-            SpriteWidget(color: SKColor.blueColor(), size: CGSizeZero),
-            SpriteWidget(color: SKColor.blueColor(), size: CGSizeZero),
-            SpriteWidget(color: SKColor.blueColor(), size: CGSizeZero)
+            SWContainer(color: SKColor.blueColor(), size: CGSizeZero),
+            SWContainer(color: SKColor.blueColor(), size: CGSizeZero),
+            SWContainer(color: SKColor.blueColor(), size: CGSizeZero)
         ]
         let leftInset: CGFloat = 0.1
         let rightInset: CGFloat = 0.2
@@ -40,7 +40,7 @@ class SpriteWidgetTest: XCTestCase {
         parent.addChildren(widgets, layout: layout)
         
         XCTAssertEqual(widgets, parent.children)
-        let width = parentWidth * (1 - leftInset - rightInset - spacing * CGFloat(widgets.count - 1))
+        let width = parentWidth * (1 - leftInset - rightInset - spacing * CGFloat(widgets.count - 1)) / CGFloat(widgets.count)
         let height = parentHeight * (1 - topInset - bottomInset)
         var x = (leftInset - 0.5) * parentWidth
         let y = (bottomInset - 0.5) * parentHeight
