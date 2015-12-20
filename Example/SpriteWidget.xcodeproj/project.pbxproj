@@ -14,7 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		8494C15AA74A1C6B537D2BA6 /* Pods_SpriteWidget_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C2430A9974E48B70A4D6DB /* Pods_SpriteWidget_Tests.framework */; };
-		FCB9D9AC1C24EF0300854F2A /* SpriteWidgetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9AB1C24EF0300854F2A /* SpriteWidgetTest.swift */; };
+		FC1676D01C26393F00451163 /* SWLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1676CF1C26393F00451163 /* SWLayoutTests.swift */; };
 		FCB9D9B01C25050300854F2A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9AF1C25050300854F2A /* Scene.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 		8B04A5F716DDB484D6F8115B /* Pods_SpriteWidget_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteWidget_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56BB516D508E7D27577FACA /* Pods-SpriteWidget_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteWidget_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteWidget_Tests/Pods-SpriteWidget_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB97DA3E11F7A9507F6FCD2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FCB9D9AB1C24EF0300854F2A /* SpriteWidgetTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteWidgetTest.swift; sourceTree = "<group>"; };
+		FC1676CF1C26393F00451163 /* SWLayoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWLayoutTests.swift; sourceTree = "<group>"; };
 		FCB9D9AF1C25050300854F2A /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,8 +127,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				FC1676CF1C26393F00451163 /* SWLayoutTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
-				FCB9D9AB1C24EF0300854F2A /* SpriteWidgetTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB9D9AC1C24EF0300854F2A /* SpriteWidgetTest.swift in Sources */,
+				FC1676D01C26393F00451163 /* SWLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

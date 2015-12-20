@@ -9,17 +9,20 @@
 import SpriteKit
 
 public class SWContainer: SKSpriteNode {
+    
+    private var layouts: [SWLayout] = []
 
-    public func addChildren(nodes: [SKNode], layout: HorizontalLayout) {
-        for node in nodes {
-            addChild(node)
-        }
-        layout.layoutNodes(nodes, parent: self)
+    public func addLayout(layout: SWLayout) {
+        layouts.append(layout)
+        layout.addNodesIntoParent(self)
     }
     
-    override func layoutInRect(rect: CGRect) {
+    public override func layoutInRect(rect: CGRect) {
         position = CGPoint(x: rect.origin.x + anchorPoint.x * rect.width, y: rect.origin.y + anchorPoint.y * rect.height)
         size = CGSize(width: rect.width, height: rect.height)
+        for layout in layouts {
+            layout.layout()
+        }
     }
     
 }

@@ -6,33 +6,33 @@
 //
 //
 
+import DynamicColor
 import SpriteKit
 
 public class SWAlert: SWContainer {
     
-    let root: SWContainer
+    private let screen = SWScreen(color: SKColor.clearColor(), size: CGSizeZero)
     
-    public init(message: String, inScene scene: SKScene) {
-        root = SWContainer(color: SKColor.clearColor(), size: scene.size)
-        root.position = CGPoint(x: scene.size.width / 2, y: scene.size.height / 2)
-        scene.addChild(root)
-        super.init(texture: nil, color: SKColor.blueColor(), size: CGSizeZero)
+    public init(message: String) {
+        super.init(texture: nil, color: SKColor(hexString: "#34495e"), size: CGSizeZero)
         
-        root.addChildren([self], layout: HorizontalLayout(insets: Insets(left: 0.1, right: 0.1, top: 0.3, bottom: 0.3), spacings: []))
-        
+        screen.addLayout(SWSingleLayout(node: self, insets: SWInsets(left: 0.1, right: 0.1, top: 0.3, bottom: 0.3)))
+
         let label = SWLabel(text: message)
-        addChildren([label], layout: HorizontalLayout(insets: Insets(left: 0.1, right: 0.1, top: 0.2, bottom: 0.6), spacings: []))
-        
-        let buttons = [
-            SWButton(color: SKColor.greenColor(), size: CGSizeZero),
-            SWButton(color: SKColor.brownColor(), size: CGSizeZero),
-            SWButton(color: SKColor.redColor(), size: CGSizeZero),
-        ]
-        addChildren(buttons, layout: HorizontalLayout(insets: Insets(left: 0.1, right: 0.1, top: 0.6, bottom: 0.2), spacings: [0.05]))
+        addLayout(SWSingleLayout(node: label, insets: SWInsets(left: 0.1, right: 0.1, top: 0.2, bottom: 0.6)))
     }
 
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func addButtons(buttons: [SWButton]) {
+        addLayout(SWHorizontalLayout(nodes: buttons, insets: SWInsets(left: 0.1, right: 0.1, top: 0.6, bottom: 0.2), spacings: [0.05]))
+    }
+    
+    public func presentInScene(scene: SKScene) {
+        scene.addChild(screen)
+        screen.layoutInRect(scene.frame)
     }
 
 }

@@ -1,5 +1,7 @@
 PODS:
-  - SpriteWidget (0.1.0)
+  - DynamicColor (2.3.0)
+  - SpriteWidget (0.1.0):
+    - DynamicColor
 
 DEPENDENCIES:
   - SpriteWidget (from `../`)
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SpriteWidget: f8de34a94eb46b173a1a1501181252f47333010a
+  DynamicColor: 18badd22ee5edeefcbe0a8f5887a86640c592a1c
+  SpriteWidget: 30d2bfa06abfb82f4a86d33d12a4f1cc60b8e0c0
 
 COCOAPODS: 0.39.0
