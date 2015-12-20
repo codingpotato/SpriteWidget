@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SpriteWidget"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Widgets for easier use of SpriteKit."
 
 # This description is used to generate tags and improve search results.
