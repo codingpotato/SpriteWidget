@@ -16,6 +16,7 @@ class Scene: SKScene {
         alert.addButtons([
             SWButton(title: "Yes", action: { () -> Void in
                 print("Yes button pressed")
+                alert.dismiss()
             }),
             SWButton(title: "No", action: { () -> Void in
                 print("No button pressed")

@@ -13,6 +13,7 @@ class SWScreen: SWContainer {
     override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         super.init(texture: texture, color: color, size: size)
         userInteractionEnabled = true
+        zPosition = 100
     }
 
     required init?(coder aDecoder: NSCoder) {

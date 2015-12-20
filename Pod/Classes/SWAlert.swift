@@ -34,5 +34,9 @@ public class SWAlert: SWContainer {
         scene.addChild(screen)
         screen.layoutInRect(scene.frame)
     }
+    
+    public func dismiss() {
+        screen.removeFromParent()
+    }
 
 }
