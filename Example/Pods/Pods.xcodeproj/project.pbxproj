@@ -24,7 +24,8 @@
 		E07C6CF2A9B0BF8AC74C93E0A53CCC21 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DDC93F13ED79859A8F8A4E307B73DC /* DynamicColor.framework */; };
 		E1B4975D860AABB5C072D0E65186DF18 /* SpriteWidget.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1D736CE38F1E6BC6D9C467A3A1B6041 /* SpriteWidget.bundle */; };
 		EF7514D95054956D113646D197AE85F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53A0408E2362880B835ADA1B67137DF /* Foundation.framework */; };
-		FC79A77E1C4692E4004F713A /* SWOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC79A77C1C468EF6004F713A /* SWOverlay.swift */; };
+		FC4C64321C60F251007AB6CC /* SWButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C64301C60F198007AB6CC /* SWButtonController.swift */; };
+		FC79A77E1C4692E4004F713A /* SWFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC79A77C1C468EF6004F713A /* SWFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,7 +115,8 @@
 		F1D736CE38F1E6BC6D9C467A3A1B6041 /* SpriteWidget.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteWidget.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506D04C8B689383763FB7F68090B20F /* Pods-SpriteWidget_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpriteWidget_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FAF9B5F12E60921E15A054FDDE88E70A /* Pods-SpriteWidget_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpriteWidget_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FC79A77C1C468EF6004F713A /* SWOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWOverlay.swift; sourceTree = "<group>"; };
+		FC4C64301C60F198007AB6CC /* SWButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWButtonController.swift; sourceTree = "<group>"; };
+		FC79A77C1C468EF6004F713A /* SWFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWFrame.swift; sourceTree = "<group>"; };
 		FD3D3BF3E7D0CDAF338E649759190811 /* SpriteWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SpriteWidget.modulemap; sourceTree = "<group>"; };
 		FFDA1FBCA675729D76CB4E44F232841D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -288,7 +290,8 @@
 		DF57B028998BEE335D49B1EFE97E58A4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FC79A77C1C468EF6004F713A /* SWOverlay.swift */,
+				FC4C64301C60F198007AB6CC /* SWButtonController.swift */,
+				FC79A77C1C468EF6004F713A /* SWFrame.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -540,7 +543,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC79A77E1C4692E4004F713A /* SWOverlay.swift in Sources */,
+				FC79A77E1C4692E4004F713A /* SWFrame.swift in Sources */,
+				FC4C64321C60F251007AB6CC /* SWButtonController.swift in Sources */,
 				5FEA1BC0BCA2BDFBF30A6D62A34754CF /* SpriteWidget-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

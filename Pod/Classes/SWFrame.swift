@@ -1,5 +1,5 @@
 //
-//  SWOverlay.swift
+//  SWFrame.swift
 //  Pods
 //
 //  Created by wangyw on 1/13/16.
@@ -9,17 +9,9 @@
 import Foundation
 import SpriteKit
 
-struct ButtonController {
+public class SWFrame: SKNode {
     
-    let buttonNode: SKNode
-    let action: SKAction
-    let block: () -> Void
-    
-}
-
-public class SWOverlay: SKNode {
-    
-    private var buttons: [ButtonController] = []
+    private var buttons: [SWButtonController] = []
     
     public override init() {
         super.init()
@@ -43,13 +35,13 @@ public class SWOverlay: SKNode {
 
     public func addActionForButtonWithName(buttonName: String, action: SKAction, block: () -> Void) {
         let buttonNode = childNodeWithName(".//\(buttonName)")!
-        buttons.append(ButtonController(buttonNode: buttonNode, action: action, block: block))
+        buttons.append(SWButtonController(buttonNode: buttonNode, action: action, block: block))
     }
     
     public func addActionForButton(buttonNode: SKNode, action: SKAction, block: () -> Void) {
         buttonNode.removeFromParent()
         addChild(buttonNode)
-        buttons.append(ButtonController(buttonNode: buttonNode, action: action, block: block))
+        buttons.append(SWButtonController(buttonNode: buttonNode, action: action, block: block))
     }
     
     public func dismiss() {

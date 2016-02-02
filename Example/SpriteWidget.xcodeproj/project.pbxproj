@@ -14,7 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		8494C15AA74A1C6B537D2BA6 /* Pods_SpriteWidget_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C2430A9974E48B70A4D6DB /* Pods_SpriteWidget_Tests.framework */; };
-		FC761C081C4536C100F6BE8F /* MainScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC761C071C4536C100F6BE8F /* MainScene.sks */; };
+		FC761C081C4536C100F6BE8F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC761C071C4536C100F6BE8F /* GameScene.sks */; };
 		FCB9D9B01C25050300854F2A /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9D9AF1C25050300854F2A /* HomeScene.swift */; };
 		FCBBAD281C47E9E4003D67F5 /* HomeScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FCBBAD271C47E9E4003D67F5 /* HomeScene.sks */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,7 @@
 		8B04A5F716DDB484D6F8115B /* Pods_SpriteWidget_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteWidget_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56BB516D508E7D27577FACA /* Pods-SpriteWidget_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteWidget_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpriteWidget_Tests/Pods-SpriteWidget_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB97DA3E11F7A9507F6FCD2B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FC761C071C4536C100F6BE8F /* MainScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainScene.sks; sourceTree = "<group>"; };
+		FC761C071C4536C100F6BE8F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		FCB9D9AF1C25050300854F2A /* HomeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		FCBBAD271C47E9E4003D67F5 /* HomeScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HomeScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +106,7 @@
 		607FACD21AFB9204008FA782 /* Example for SpriteWidget */ = {
 			isa = PBXGroup;
 			children = (
-				FC761C071C4536C100F6BE8F /* MainScene.sks */,
+				FC761C071C4536C100F6BE8F /* GameScene.sks */,
 				FCBBAD271C47E9E4003D67F5 /* HomeScene.sks */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				FCB9D9AF1C25050300854F2A /* HomeScene.swift */,
@@ -256,7 +256,7 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				FCBBAD281C47E9E4003D67F5 /* HomeScene.sks in Resources */,
-				FC761C081C4536C100F6BE8F /* MainScene.sks in Resources */,
+				FC761C081C4536C100F6BE8F /* GameScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
