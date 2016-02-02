@@ -2,17 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Facebook-ipad.png",
+      "filename" : "Leaderboard.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Facebook@2.png",
+      "filename" : "Leaderboard@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Facebook@3.png",
       "scale" : "3x"
     }
   ],

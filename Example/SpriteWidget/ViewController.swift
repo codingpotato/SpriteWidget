@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let scene = MainScene(fileNamed: "MainScene") {
+        if let scene = HomeScene(fileNamed: "HomeScene") {
             let skView = self.view as! SKView
             skView.showsFPS = true
             skView.showsNodeCount = true
