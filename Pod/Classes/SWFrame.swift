@@ -18,10 +18,10 @@ public class SWFrame: SKNode {
         userInteractionEnabled = true
     }
     
-    public convenience init(fileName: String) {
+    public convenience init(fileNamed: String) {
         self.init()
         
-        if let scene = SKScene(fileNamed: fileName) {
+        if let scene = SKScene(fileNamed: fileNamed) {
             for node in scene.children {
                 node.removeFromParent()
                 addChild(node)
