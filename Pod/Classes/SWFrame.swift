@@ -21,11 +21,10 @@ public class SWFrame: SKNode {
     public convenience init(fileNamed: String) {
         self.init()
         
-        if let scene = SKScene(fileNamed: fileNamed) {
-            for node in scene.children {
-                node.removeFromParent()
-                addChild(node)
-            }
+        let scene = SKScene(fileNamed: fileNamed)!
+        for node in scene.children {
+            node.removeFromParent()
+            addChild(node)
         }
     }
 

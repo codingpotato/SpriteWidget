@@ -41,7 +41,7 @@ class HomeScene: SKScene {
     }
     
     private func openSettingsMenu() {
-        let frame = SWFrame(fileNamed: "SettingsScene")
+        let frame = SWFrame(fileNamed: "SettingsMenu")
         addChild(frame)
         let panel = frame.childNodeWithName("Panel") as! SKSpriteNode
         panel.centerRect = CGRect(x: 0.5, y: 0.5, width: 0, height: 0)
